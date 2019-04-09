@@ -39,7 +39,7 @@ class App extends Component {
   addBall = () => {
     const updatedAtBat = this.state.atBat;
 
-    if (this.state.atBat.balls + 1 > 4) {
+    if (this.state.atBat.balls + 1 >= 4) {
       updatedAtBat.strikes = 0;
       updatedAtBat.balls = 0;
       updatedAtBat.fouls = 0;
@@ -75,7 +75,7 @@ class App extends Component {
   addStrike = () => {
     const updatedAtBat = this.state.atBat;
 
-    if (this.state.atBat.strikes + 1 > 3) {
+    if (this.state.atBat.strikes + 1 >= 3) {
       updatedAtBat.strikes = 0;
       updatedAtBat.balls = 0;
       updatedAtBat.fouls = 0;
